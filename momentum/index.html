@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owfont-regular.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+
+    <img src="/img/overlay.png" class="background-img" alt="background-img">
+    <div class="weather">
+        <span id="temperature"></span><span>&deg;</span><br>
+        <span>humidity: </span><span id="humidity"></span><span>%</span><br>
+        <span>wind speed: </span><span id="wind"></span><span>m/s</span>
+        <h2 id="weatherCheck" contenteditable="true">[wright your town]</h2>
+        <div class="weather-icon owf owf-803"></div>
+    </div>
+    <div id="refresh-arrow">&rarr;</div>
+    <div id="refresh-img">next image</div>
+    <main>
+        <div class="dayBox">
+            <day id="day"></day>
+            <time id="time"></time>
+        </div>
+        <div class="greeting">
+            <p id="greeting"></p>
+            <p id="name" contenteditable="true"></p>
+        </div>
+        <div class="focusBox">
+            <h2>What Is Your Focus For Today?</h2>
+            <p id="focus" contenteditable="true"></p>
+        </div>
+        <div class="quote">
+            <div class="quote--content">
+                <blockquote id="quoteText"></blockquote>
+                <figure>
+                    <figcaption id="quoteAuthor"></figcaption>
+                </figure>
+            </div>
+            <div id="changeQuote">&rarr;</div>
+        </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
