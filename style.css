@@ -109,6 +109,7 @@ main {
 
 #name {
   cursor: pointer;
+  min-width: auto;
 }
 
 #name:hover,
