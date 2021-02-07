@@ -1,219 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    height: 100vh;
-    background-size: cover;
-    color: #ffffffff;
-    cursor: default;
-    overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+  background-size: cover;
+  color: #ffffffff;
+  cursor: default;
+  overflow-x: hidden;
 }
 
 .background-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 p {
-    display: block;
-    min-width: 100px;
+  display: block;
+  min-width: 100px;
 }
 
 .weather {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    background: black;
-    font-size: 1.5em;
-    padding: 10px;
-    z-index: 2;
-    font-size: 16px;
-    text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: black;
+  font-size: 1.5em;
+  padding: 10px;
+  z-index: 2;
+  font-size: 16px;
+  text-align: center;
 }
 
 #weatherCheck {
-    font-size: 24px;
-    cursor: pointer;
-    margin-bottom: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .weather-icon {
-    transform: scale(2.2) !important;
+  transform: scale(2.2) !important;
 }
 
 #refresh-arrow {
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    width: 50px;
-    height: 48px;
-    background-color: black;
-    line-height: 2.8;
-    text-align: center;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 50px;
+  height: 48px;
+  background-color: black;
+  line-height: 2.8;
+  text-align: center;
 }
 
 #refresh-img {
-    width: 50px;
-    height: 48px;
-    background: black;
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    transition: all .1s linear;
-    text-align: center;
+  width: 50px;
+  height: 48px;
+  background: black;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  transition: all 0.1s linear;
+  text-align: center;
 }
 
 #refresh-img:hover {
-    cursor: pointer;
-    opacity: 0;
+  cursor: pointer;
+  opacity: 0;
 }
 
 main {
-    padding-top: 35vh;
+  padding-top: 35vh;
 }
 
 .dayBox {
-    width: 100%;
-    text-align: right;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    opacity: 0.7;
+  width: max-content;
+  text-align: right;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  opacity: 0.6;
+  background: aliceblue;
+  border-radius: 10px;
 }
 
 #day {
-    font-size: 2rem;
-    padding: 2px;
-    background: white;
-    border-radius: 20px;
+  font-size: 2rem;
+  padding: 2px;
+  border-radius: 20px;
 }
 
 #time {
-    text-align: center;
-    background: white;
-    border-radius: 0 0 20px 20px;
-    width: 280px;
-    font-size: 50px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  width: 280px;
+  font-size: 50px;
 }
 
 #name {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #name:hover,
 #focus:hover {
-    color: aquamarine;
+  opacity: 1;
 }
 
 .greeting {
-    padding-left: 5%;
-    font-size: 24px;
-    background: black;
-    color: #fff;
-    opacity: 0.8;
-    display: flex;
+  padding: 2px 5px;
+  border-radius: 3px;
+  justify-content: center;
+  width: max-content;
+  margin: 10px auto;
+  font-size: 24px;
+  background: #202020;
+  color: #fff;
+  opacity: 0.8;
+  display: flex;
 }
 
 h1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .focusBox {
-    padding-left: 5%;
-    padding-top: 10px;
+  padding: 5px 10px;
+  width: max-content;
+  margin: 10px auto;
+  color: black;
+  opacity: 0.7;
+  background: aliceblue;
+  border-radius: 7px;
+  text-align: center;
 }
 
 .focusBox h2 {
-    opacity: 0.8;
+  font-size: 20px;
 }
 
 #focus {
-    display: inline-block;
-    background-color: #cacf98;
-    opacity: 0.6;
-    cursor: pointer;
-    font-size: 24px;
-    color: #222222;
+  display: inline-block;
+  opacity: 0.6;
+  cursor: pointer;
+  font-size: 24px;
+  color: #222222;
+  outline: none;
 }
 
 .quote {
-    font-size: 12px;
-    margin-top: 5%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    bottom: 10px;
+  font-size: 12px;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
 }
 
 .quote--content {
-    background: #2f2f2fd1;
+  background: #2f2f2fd1;
+  padding: 5px;
 }
 
 blockquote,
 figure {
-    background: #00000063;
+  background: #00000063;
 }
 
 #changeQuote {
-    width: 40px;
-    height: 20px;
-    color: #2f2f2fd1;
-    background: #e5ddcb;
-    cursor: pointer;
-    transition: all .1s linear;
-    text-align: center;
+  width: 40px;
+  height: 20px;
+  color: #2f2f2fd1;
+  background: #e5ddcb;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  text-align: center;
 }
 
 #changeQuote:hover {
-    background: #2f2f2fd1;
-    color: #e5ddcb;
+  background: #2f2f2fd1;
+  color: #e5ddcb;
 }
 
 @media (max-width: 640px) {
-    .dayBox {
-        width: 85%;
-    }
-    #day {
-        font-size: 1rem;
-    }
-    #time {
-        width: 225px;
-        font-size: 40px;
-        border-radius: 20px;
-    }
-    .greeting {
-        font-size: 16px;
-    }
-    .focusBox {
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-    }
-    .focusBox h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-    #focus {
-        padding: 0 5px;
-    }
-    .quote--content {
-        height: 70px;
-        background: none;
-    }
+  .dayBox {
+    width: 85%;
+  }
+  #day {
+    font-size: 1rem;
+  }
+  #time {
+    width: 225px;
+    font-size: 40px;
+    border-radius: 20px;
+  }
+  .greeting {
+    font-size: 16px;
+  }
+  .focusBox {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .focusBox h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #focus {
+    padding: 0 5px;
+  }
+  .quote--content {
+    height: 70px;
+    background: none;
+  }
 }
